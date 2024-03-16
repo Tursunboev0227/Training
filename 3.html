@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Boxes in a Row</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        .box {
+            width: calc((100% - 16px) / 2);
+            /* Adjust width as needed */
+            height: 100px;
+            /* Adjust height as needed */
+            background-color: #ccc;
+            /* Adjust background color as needed */
+            margin-bottom: 16px;
+            /* Margin between boxes */
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .box {
+                width: calc((100% - 24px) / 4);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>
