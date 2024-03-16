@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Layout and Semantics</title>
+        <style>
+            .box{
+                background-color: blue;
+                font-size: 24px;
+                color: white;
+                text-align: center;
+            }
+            header
+            {
+                height: 100px;
+                line-height: 100px;
+            }
+            section
+            {
+                margin-top: 1px;
+                height: 500px;
+                line-height: 500px;
+                width: 70%;
+                float: right;
+                border-right: 1px solid;
+            }
+            aside
+            {
+                height: 500px;
+                margin-top: 1px;
+                line-height: 500px;
+                width: 29%;
+                float: left;
+            }
+            footer{
+                margin-top: 1px;
+                height: 100px;
+                line-height: 100px;
+                float: left;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="box">
+            Hearder
+        </header>
+        
+        <aside class="box">
+            Sidebar
+        </aside>    
+        <section class="box">
+            Main Content
+        </section>
+        <footer class="box">
+            Footer
+        </footer>
+    </body>
+</html>
